@@ -221,3 +221,234 @@ main{
     color: #000;
     border: 1px solid #000;
 }
+
+.experience-section{
+    width: 1131px;
+    height: 1177px;
+}
+
+.experience-header-div{
+    width: 1131px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experience-heading-div{
+    width: 940px;
+    height: 71px;
+}
+
+.experience-heading{
+    width: 387px;
+    height: 77px;
+    font-size: 64px;
+    font-family: sans-serif;
+}
+
+.prof-time-p{
+    width: 940px;
+    height: 27px;
+    font-size: 18px;
+    font-family: sans-serif + sans-serif;
+}
+
+.bottom-line-div{
+    width: 1111px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-line{
+    width: 1111px;
+    height: 2px;
+    background: #000;
+}
+
+.experience-detail-div{
+    display: flex;
+}
+
+.role-div{
+    width: 566px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.role-heading{
+    width: 470px;
+    height: 27px;
+    font-size: 18ox;
+    font-family: sans-serif+sans-serif;
+}
+
+.project-title{
+    width: 470px;
+    height: 24px;
+    font-size: 16px;
+    font-family: sans-serif+sans-serif;
+}
+
+.project-detail-div{
+    width: 566px;
+    height: 72px;
+}
+
+.project-detail{
+    width: 455px;
+    height: 72px;
+    font-size: 16px;
+    font-family: sans-serif + sans-serif;
+    line-height: 21px;
+}
+
+.education-section{
+    width: 1131px;
+    height: 725px;
+}
+
+.education-header-div{
+    width: 1131px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education-heading-div{
+    width: 940px;
+    height: 77px;
+}
+
+.education-heading{
+    width: 354px;
+    height: 77px;
+    font-size: 64px;
+    font-family: sans-serif;
+}
+
+.acedemic-heading{
+    width: 940px;
+    height: 27px;
+    font-size: 18px;
+    font-family: sans-serif+sans-serif;
+}
+
+.degree-section{
+    width: 1131px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.degree-div{
+    width: 940px;
+}
+
+.degree-div .degree-heading{
+    width: 876px;
+    height: 38px;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+.degree-div .bottom-line-div{
+    width: 940px;
+}
+
+.career-section{
+    width: 1131px;
+    height: 849px;
+}
+
+.career-header-div{
+    width: 1131px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.career-heading-div{
+    width: 940px;
+    height: 77px;
+}
+
+.career-heading{
+    width: 616px;
+    height: 77px;
+    font-size: 64px;
+    font-family: sans-serif;
+}
+
+.professional-reco{
+    width: 940px;
+    height: 27px;
+    font-size: 18px;
+    font-family: sans-serif+sans-serif;
+}
+
+.career-bottom-section{
+    width: 1131px;
+    height: 445px;
+    display: flex;
+    justify-content: right;
+}
+
+.career-flex-div{
+    width: 940px;
+    height: 445px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.career-box{
+    width: 306px;
+}
+
+.career-h3{
+    width: 306px;
+    height: 27px;
+    font-size: 18px;
+    font-family: sans-serif+sans-serif;
+}
+
+.career-p-h{
+    width: 286px;
+    height: 27px;
+    font-size: 16px;
+    font-family: sans-serif+sans-serif;
+}
+
+.career-para{
+    width: 286px;
+    height: 63px;
+}
+
+.contact-section{
+    width: 1131px;
+    height: 585px;
+    background: #000;
+    /* padding-bottom: 10px; */
+}
+
+.contact-section .contact-main-div{
+    width: 1131px;
+    height: 585px;
+    display: flex;
+}
+
+.contact-header-div{
+    width: 566px;
+    height: 565px;
+}
+
+.contact-form-container{
+    width: 566px;
+    height: 564px;
+}
