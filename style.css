@@ -10,8 +10,10 @@ body{
 }
 
 header{
+    position: sticky;
+    top: 0;
     height: 63px;
-    /* background: red; */
+    background: #f9f6f6;
 }
 
 nav{
@@ -24,7 +26,6 @@ nav{
     height: 63px;
     display: flex;
     align-items: center;
-    /* background: red; */
 }
 
 .logo{
