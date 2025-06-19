@@ -13,10 +13,13 @@ header{
     position: sticky;
     top: 0;
     height: 63px;
+    display: flex;
+    justify-content: center;
     background: #f9f6f6;
 }
 
 nav{
+    width: 1131px;
     display: flex;
     justify-content: space-between;
 }
@@ -121,6 +124,7 @@ main{
 .hero-img-container{
     width: 1131px;
     height: 560px;
+    /* min-width: 320px; */
     padding: 1px;
 }
 
