@@ -84,25 +84,29 @@ nav{
 
 .menu-box{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
+    height: 100vh;
     z-index: 100;
     background: #f9f6f6;
 }
 
 .menu{
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: red; */
 }
 
 .menu .navlist{
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    height: 230px;
     display: flex;
     flex-direction: column;
+    /* background: red; */
     
 }
 
@@ -114,6 +118,7 @@ nav{
     height: 40px;
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .close-img{
