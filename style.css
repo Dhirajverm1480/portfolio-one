@@ -335,6 +335,7 @@ main{
     width: 940px;
     height: 27px;
     font-size: 18px;
+    margin: 20px 0 0 0;
     font-family: sans-serif + sans-serif;
 }
 
@@ -723,7 +724,7 @@ main{
 .footer-flex-inner{
     width: 565.5px;
     height: 445px;
-    /* background: yellow; */
+    padding: 0 0 0 1%;
 }
 
 .footer-heading{
