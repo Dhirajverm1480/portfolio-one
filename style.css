@@ -65,7 +65,7 @@ nav{
 }
 
 .menu-bar{
-    display: block;
+    display: none;
     width: 30px;
     height: 30px;
     margin: 0 0 0 10px;
