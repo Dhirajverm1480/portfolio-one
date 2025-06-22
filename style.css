@@ -10,6 +10,9 @@ html{
 
 body{
     background: #f9f6f6;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 header{
@@ -21,6 +24,7 @@ header{
     align-items: center;
     justify-content: center;
     background: #f9f6f6;
+    /* background: yellow; */
 }
 
 nav{
@@ -124,6 +128,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background: red; */
 }
 
 .hero-section, .about-section, .experience-section, .education-section, .career-section, .contact-section{
@@ -181,7 +186,7 @@ main{
     justify-content: right;
 }
 
-.hero-btn-div button{
+.hero-btn{
     width: 160px;
     height: 50px;
     background-color: #000000;
@@ -239,7 +244,8 @@ main{
     margin: 30px 0;
 }
 
-.about-para-div .about-p1{
+.about-p1{
+    width: 100%;
     font-size: 18px;
 }
 
@@ -284,7 +290,7 @@ main{
     line-height: 25px;
 }
 
-.about-para-btn .about-btn{
+.about-btn{
     width: 160px;
     height: 48px;
     border-radius: 100px;
@@ -434,16 +440,16 @@ main{
     width: 940px;
 }
 
-.degree-div .degree-heading{
+.degree-heading{
     width: 876px;
     height: 38px;
     font-size: 38px;
     font-family: sans-serif;
 }
 
-.degree-div .bottom-line-div{
+/* .degree-div .bottom-line-div{
     width: 940px;
-}
+} */
 
 .career-section{
     width: 1131px;

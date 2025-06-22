@@ -1,94 +1,61 @@
-@media screen and (max-width: 320px) {
-    body{
-        padding: 0 0;
+@media screen and (max-width: 400px){
+    .menu-bar{
+        display: block;
+    }
+    .navlist{
+        display: none;
+        /* background: red; */
     }
 
-    header{
+    .section{
         width: 100%;
-        height: 100%;
-    }
-    nav {
-        width: 100%; /* Makes the nav take the full width */
     }
 
-    .logo {
-        margin: 0 0 0 12px;
-    }
-
-    .navlist {
-        display: none; /* Hides navlist */
-    }
-
-    .hero-section{
+    .hero-div{
         width: 100%;
-        /* padding: 0 0 0 10px; */
     }
 
-    .hero-heading-div{
+    .hero-heading-div, .about-header-div, .experience-header-div, .education-header-div, .career-header-div{
         width: 100%;
     }
 
     .hero-heading{
-        font-size: 40px;
+        width: 100%;
     }
 
-    .hero-more-div {
-        height: 210px;
+    .hero-more-div{
+        width: 100%;
         display: flex;
-        justify-content: left;
         flex-direction: column;
-        gap: 10px;
-        margin-bottom: 20px;
+        align-items: center;
     }
 
     .hero-para-div{
         width: 100%;
-        height: 120px;
     }
 
     .hero-btn-div{
-        width: 285px;
-        height: 45px;
-        display: flex;
-    }
-
-    .hero-btn-div button{
         width: 100%;
-        height: 100%;
+        background: green;
     }
 
-    .hero-img-container{
+    .hero-btn{
         width: 100%;
-        height: 300px;
     }
 
-    .about-section{
+    /* about */
+
+    .about-heading-div, .about-heading{
         width: 100%;
-        height: 100%;
     }
 
-    .about-head-div{
-        width: 100%; 
-        height: 336.41px;
-    }
-
-    .about-heading-div{
-        width: 280px;
-        height: 37.41px;
-    }
-
-    .about-heading{
-        font-size: 34px;
+    .about-para-div{
+        background: blue;
+        width: 100%;
     }
 
     .about-journey-div{
-        width: 280px;
-        height: 190px;
-    }
-
-    .about-journey{
         width: 100%;
-        height: 100%;
     }
 
     .about-bottom-section{
@@ -99,180 +66,191 @@
 
     .about-para-btn{
         width: 100%;
-        height: 229px;
+    }
+
+    .about-para-btn p{
+        width: 100%;
     }
 
     .about-btn{
         width: 100%;
-        height: 100%;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    body{
-        font-size: 14px;
     }
 
-    .navlist{
-        display: none;
-    }
+    /* Experience */
 
-    .menu-bar{
-        display: block;
-    }
-
-    .section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* background: red; */
-    }
-
-    .hero-heading-div{
+    .experience-heading-div{
         width: 100%;
     }
 
-    .hero-heading{
-        font-size: 65px;
-    }
-
-    .hero-img-container{
+    .prof-time-p{
         width: 100%;
-        height: 400px;
-    }
-
-    .about-header-div, .experience-header-div, .career-header-div, .education-section .footer{
-        width: 100%;
-    }
-
-    .about-journey-div{
-        width: 100%;
-    }
-
-    .about-bottom-section{
-        width: 100%;
-    }
-
-    .education-header-div .bottom-line{
-        width: 100%;
-    }
-
-    .education-header-div, .degree-section, .degree-div, .career-header-div{
-        width: 100%;
-    }
-
-    .degree-section .bottom-line-div{
-        width: 100%;
-    }
-
-    .about-bottom-section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
     .experience-detail-div{
         width: 100%;
+        display: flex;
         flex-direction: column;
+    }
+
+    .role-div{
+        width: 100%;
+    }
+
+    .role-heading, .project-title{
+        width: 100%;
+    }
+
+    .project-detail-div, .project-detail{
+        width: 100%;
+    }
+
+    /* education */
+
+    .education-heading-div{
+        width: 100%;
+    }
+
+    .degree-section{
+        width: 100%;
+    }
+
+    .degree-div{
+        width: 100%;
+    }
+
+    .degree-heading{
+        width: 100%;
+    }
+
+    /* Career */
+
+    .career-heading-div{
+        width: 100%;
+    }
+
+    .career-heading{
+        width: 100%;
+    }
+
+    .professional-reco{
+        width: 100%;
     }
 
     .career-bottom-section{
         width: 100%;
+        /* display: flex; */
+        /* justify-content: left; */
     }
 
-    .contact-main-div{
-        display: 100%;
+    .career-flex-div{
+        width: 100%;
+    }
+
+    .career-box{
+        width: 100%;
+    }
+
+    /* Contact */
+
+    .contact-main-div, .contact-form-container{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
     }
 
-    .footer-div, .top-line-div{
+    .contact-header-div{
         width: 100%;
+    }
+
+    .contact-heading{
+        width: 100%;
+    }
+
+    .contact-para{
+        width: 100%;
+    }
+
+    .form-div{
+        width: 100%;
+    }
+
+    .label-div{
+        width: 100%;
+    }
+
+    .label-name{
+        width: 100%;
+    }
+
+    .name-summary-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input-div{
+        width: 100%;
+    }
+
+    .form-input-div .input-bottom-line{
+        width: 100%;
+    }
+
+    .input-box{
+        width: 100%;
+    }
+
+    .input-box input{
+        width: 100%;
+    }
+
+    .message-box-div textarea{
+        width: 100%;
+    }
+
+    .form-btn-div{
+        width: 100%;
+    }
+
+    .form-btn{
+        width: 100%;
+    }
+
+    /* footer */
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer-div{
+        width: 100%;
+    }
+
+    .top-line-div{
+        width: 100%;
+        /* margin: 0; */
     }
 
     .footer-flex{
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .footer-div .bottom-line-div{
+    .footer-flex-inner{
         width: 100%;
+    }
+
+    .footer-heading{
+        width: 100%;
+    }
+
+    .footer-heading a{
+        width: 100%;
+    }
+
+    .footer .bottom-line-div{
+        width: 100%;
+        /* margin: 4px 10px 75px 10px; */
     }
 }
-
-@media screen and (max-width: 610px) {
-    .hero-more-div{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero-btn-div{
-        width: 100%;
-        /* background: yellow; */
-    }
-
-    .hero-btn-div button{
-        width: 100%;
-    }
-}
-
-/* @media screen and(max-width: 480px){
-    body{
-        font-size: 12px;
-        margin: 2px;
-    }
-
-    header{
-        width: 100%;
-        display: none;
-    }
-
-    .navlist{
-        display: none;
-    }
-
-    .menu-bar{
-        display: block;
-    }
-} */
-
-/* @media screen and (max-width: 375px) {
-    body{
-        font-size: 14px;
-        margin: 5px;
-    }
-
-    .navlist{
-        display: none;
-    }
-
-    .menu-bar{
-        display: block;
-    }
-
-    .section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-img-container{
-        width: 100%;
-        height: 400px;
-    }
-
-    .about-head-div, .experience-header-div, .career-header-div{
-        width: 100%;
-    }
-
-    .about-bottom-section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-} */
