@@ -169,6 +169,8 @@
 
     .career-bottom-section{
         width: 100%;
+        height: 1319px;
+        /* background: red; */
         /* display: flex; */
         /* justify-content: left; */
     }
@@ -183,15 +185,20 @@
 
     /* Contact */
 
-    .contact-main-div, .contact-form-container{
+    .contact-main-div{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
 
+    .contact-form-container{
+        width: 100%;
+        height: 636px;
+    }
+
     .contact-header-div{
         width: 100%;
-        height: 100%;
+        height: 162px;
         /* background: red; */
     }
 
@@ -206,6 +213,7 @@
 
     .form-div{
         width: 100%;
+        height: 100%;
         /* background: red; */
     }
 
