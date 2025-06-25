@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: #f9f6f6;
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     width: 100%;
@@ -21,10 +21,9 @@ header{
     align-items: center;
     justify-content: center;
     background: #f9f6f6;
-    /* background: yellow; */
 }
 
-nav{
+nav {
     width: 100%;
     height: 63px;
     max-width: 1131px;
@@ -33,20 +32,20 @@ nav{
     align-items: center;
 }
 
-.div-nav-a{
+.div-nav-a {
     width: 452px;
     height: 63px;
     display: flex;
     align-items: center;
 }
 
-.logo{
+.logo {
     font-size: 18px;
     text-decoration: none;
     color: #000000;
 }
 
-.navlist{
+.navlist {
     width: 678px;
     height: 63px;
     display: flex;
@@ -54,8 +53,7 @@ nav{
     align-items: center;
 }
 
-.navlist .nav-a{
-    /* width: 71px; */
+.navlist .nav-a {
     height: 40px;
     padding: 10px;
     margin: 4px;
@@ -66,7 +64,7 @@ nav{
 
 /* ==== Menu ====== */
 
-.menu-bar{
+.menu-bar {
     display: none;
     width: 30px;
     height: 30px;
@@ -74,42 +72,54 @@ nav{
     cursor: pointer;
 }
 
-.menu-img{
+.menu-img {
     width: 100%;
     height: 100%;
     transform: rotateY(180deg);
 }
 
-.menu-box{
-    display: none;
+/* SideBar */
+
+.menu-box {
+    height: 0%;
+    width: 100%;
     position: fixed;
+    z-index: 1;
     top: 0;
-    width: 100%;
-    height: 400px;
-    /* height: 100vh; */
-    z-index: 100;
-    background: #f9f6f6;
+    left: 0;
+    background-color: #f9f6f6c0;
+    backdrop-filter: blur(25px);
+    overflow-y: hidden;
+    transition: 0.5s;
 }
 
-.menu{
+.sidelist {
+    position: relative;
+    top: 25%;
+    padding: 45px 0;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu .navlist{
-    height: 230px;
+    text-align: center;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    
 }
 
-.close-box{
-    position: absolute;
-    top: 0;
-    right: 0;
+.sidelist .nav-a {
+    width: 100%;
+    font-size: 2.1rem;
+    line-height: 56px;
+    color: #000;
+    text-decoration: none;
+}
+
+.sidelist .nav-a:hover{
+    text-decoration: underline;
+}
+
+.close-box {
+    position: fixed;
+    top: 20px;
+    right: 10%;
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -117,44 +127,45 @@ nav{
     cursor: pointer;
 }
 
-.close-img{
+.close-img {
     width: 100%;
     height: 100%;
 }
 
 /* ========================== Main ======================== */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: red; */
 }
 
-.hero-section, .about-section, .experience-section, .education-section, .career-section, .contact-section{
+.hero-section,
+.about-section,
+.experience-section,
+.education-section,
+.career-section,
+.contact-section {
     width: 100%;
-    /* max-width: 1131px; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero-div{
+.hero-div {
     width: 1131px;
-    /* height: 1002px; */
 }
 
-.hero-heading-div{
+.hero-heading-div {
     margin-top: 50px;
-    /* width: 1131px; */
     width: 100%;
     height: 138px;
     display: flex;
     align-items: center;
 }
 
-.hero-heading{
+.hero-heading {
     width: 940px;
     height: 75px;
     font-size: 75px;
@@ -162,33 +173,33 @@ main{
     font-family: sans-serif;
 }
 
-.hero-more-div{
+.hero-more-div {
     height: 72px;
     display: flex;
     align-items: center;
-    justify-content: space-between  ;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.hero-para-div{
+.hero-para-div {
     width: 905px;
     height: 48px;
     padding: 0 4px;
 }
 
-.hero-para-div p{
+.hero-para-div p {
     font-size: 16px;
     line-height: 21px;
 }
 
-.hero-btn-div{
+.hero-btn-div {
     width: 227px;
     display: flex;
     justify-content: right;
     text-decoration: none;
 }
 
-.hero-btn{
+.hero-btn {
     width: 160px;
     height: 50px;
     background-color: #000000;
@@ -200,76 +211,74 @@ main{
     font-family: sans-serif;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
     background: #f9f6f6;
     color: #000;
     border: 1px solid #000;
 }
 
-.hero-img-container{
+.hero-img-container {
     width: 100%;
     height: 560px;
 }
 
-.hero-img-container img{
+.hero-img-container img {
     width: 100%;
     height: 100%;
 }
 
 /* ========================== About ======================== */
 
-.about-section{
+.about-section {
     width: 100%;
     height: 958px;
-    /* background: yellow; */
 }
 
-.about-header-div{
+.about-header-div {
     width: 1131px;
     height: 268px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background: yellow; */
 }
 
-.about-heading-div{
+.about-heading-div {
     width: 1131px;
     height: 138px;
     display: flex;
     align-items: end;
 }
 
-.about-heading{
+.about-heading {
     width: 940px;
     height: 64px;
     font-size: 75px;
     font-family: sans-serif;
 }
 
-.about-para-div{
+.about-para-div {
     width: 940px;
     height: 27px;
     margin: 30px 0;
 }
 
-.about-p1{
+.about-p1 {
     width: 100%;
     font-size: 18px;
 }
 
-.about-journey-div{
+.about-journey-div {
     width: 940px;
     height: 81px;
 }
 
-.about-journey-div .about-journey{
+.about-journey-div .about-journey {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
 }
 
-.about-bottom-section{
+.about-bottom-section {
     width: 1131px;
     height: 320px;
     display: flex;
@@ -277,29 +286,29 @@ main{
     margin: 20px 0 0 0;
 }
 
-.about-img-container{
+.about-img-container {
     width: 373px;
     height: 320px;
 }
 
-.about-img-container img{
+.about-img-container img {
     width: 260px;
     height: 320px;
 }
 
-.about-para-btn{
+.about-para-btn {
     width: 759px;
     height: 320px;
 }
 
-.about-para-btn p{
+.about-para-btn p {
     width: 640px;
     height: 54px;
     font-size: 18px;
     line-height: 25px;
 }
 
-.about-btn{
+.about-btn {
     width: 160px;
     height: 48px;
     border-radius: 100px;
@@ -312,66 +321,69 @@ main{
     margin: 20px 0 0 0;
 }
 
-.about-btn:hover{
+.about-btn:hover {
     background: #f9f6f6;
     color: #000;
     border: 1px solid #000;
 }
 
-.experience-section{
+.experience-section {
     width: 1131px;
     height: 1177px;
 }
 
 /* All header-divs */
 
-.experience-header-div, .career-header-div, .education-header-div{
+.experience-header-div,
+.career-header-div,
+.education-header-div {
     width: 1131px;
     height: 190px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: end;
 }
 
-.experience-heading-div{
+.experience-heading-div {
     width: 940px;
     height: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.experience-heading{
+.experience-heading {
     width: 387px;
     height: 77px;
     font-size: 64px;
     font-family: sans-serif;
 }
 
-.prof-time-p{
+.prof-time-p {
     width: 940px;
     height: 27px;
     font-size: 18px;
     font-family: sans-serif + sans-serif;
 }
 
-.bottom-line-div{
+.bottom-line-div {
     width: 100%;
-    /* max-width: 100%; */
     height: 66px;
     display: flex;
-    /* background: red; */
     align-items: center;
 }
 
-.bottom-line{
+.bottom-line {
     width: 100%;
     height: 2px;
     background: #000;
 }
 
-.experience-detail-div{
+.experience-detail-div {
     display: flex;
 }
 
-.role-div{
+.role-div {
     width: 566px;
     height: 72px;
     display: flex;
@@ -379,26 +391,26 @@ main{
     justify-content: space-between;
 }
 
-.role-heading{
+.role-heading {
     width: 470px;
     height: 27px;
     font-size: 18ox;
     font-family: sans-serif+sans-serif;
 }
 
-.project-title{
+.project-title {
     width: 470px;
     height: 24px;
     font-size: 16px;
     font-family: sans-serif+sans-serif;
 }
 
-.project-detail-div{
+.project-detail-div {
     width: 566px;
     height: 72px;
 }
 
-.project-detail{
+.project-detail {
     width: 455px;
     height: 72px;
     font-size: 16px;
@@ -406,39 +418,31 @@ main{
     line-height: 21px;
 }
 
-.education-section{
+.education-section {
     width: 1131px;
     height: 725px;
 }
 
-/* .education-header-div{
-    width: 1131px;
-    height: 190px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-.education-heading-div{
+.education-heading-div {
     width: 940px;
     height: 77px;
 }
 
-.education-heading{
+.education-heading {
     width: 354px;
     height: 77px;
     font-size: 64px;
     font-family: sans-serif;
 }
 
-.acedemic-heading{
+.acedemic-heading {
     width: 940px;
     height: 27px;
     font-size: 18px;
     font-family: sans-serif+sans-serif;
 }
 
-.degree-section{
+.degree-section {
     width: 1131px;
     height: 380px;
     display: flex;
@@ -446,110 +450,97 @@ main{
     align-items: end;
 }
 
-.degree-div{
+.degree-div {
     width: 940px;
 }
 
-.degree-heading{
+.degree-heading {
     width: 876px;
     height: 38px;
     font-size: 38px;
     font-family: sans-serif;
 }
 
-/* .degree-div .bottom-line-div{
-    width: 940px;
-} */
-
-.career-section{
+.career-section {
     width: 1131px;
     height: 849px;
 }
 
-/* .career-header-div{
-    width: 1131px;
-    height: 190px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-.career-heading-div{
+.career-heading-div {
     width: 940px;
     height: 77px;
 }
 
-.career-heading{
+.career-heading {
     width: 616px;
     height: 77px;
     font-size: 64px;
     font-family: sans-serif;
 }
 
-.professional-reco{
+.professional-reco {
     width: 940px;
     height: 27px;
     font-size: 18px;
     font-family: sans-serif+sans-serif;
 }
 
-.career-bottom-section{
+.career-bottom-section {
     width: 1131px;
     height: 445px;
     display: flex;
     justify-content: right;
 }
 
-.career-flex-div{
+.career-flex-div {
     width: 940px;
     height: 445px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.career-box{
+.career-box {
     width: 306px;
 }
 
-.career-h3{
+.career-h3 {
     width: 306px;
     height: 27px;
     font-size: 18px;
     font-family: sans-serif+sans-serif;
 }
 
-.career-p-h{
+.career-p-h {
     width: 286px;
     height: 27px;
     font-size: 16px;
     font-family: sans-serif+sans-serif;
 }
 
-.career-para{
+.career-para {
     width: 286px;
     height: 63px;
 }
 
-.contact-section{
+.contact-section {
     width: 100%;
     height: 100%;
     background: #000;
-    /* padding-bottom: 10px; */
 }
 
-.contact-main-div{
+.contact-main-div {
     width: 1131px;
     height: 585px;
     display: flex;
 }
 
-.contact-header-div{
+.contact-header-div {
     width: 566px;
     height: 565px;
     padding: 40px;
 }
 
-.contact-heading{
+.contact-heading {
     width: 403px;
     height: 66px;
     font-size: 55px;
@@ -557,7 +548,7 @@ main{
     color: #ffffff;
 }
 
-.contact-para{
+.contact-para {
     width: 375px;
     height: 58px;
     font-size: 16px;
@@ -566,14 +557,14 @@ main{
     color: #ffffff;
 }
 
-.contact-form-container{
+.contact-form-container {
     width: 566px;
     height: 564px;
     display: flex;
     align-items: center;
 }
 
-.form-div{
+.form-div {
     width: 488px;
     height: 513px;
     padding: 24px;
@@ -582,37 +573,37 @@ main{
     justify-content: space-between;
 }
 
-.name-summary-div{
+.name-summary-div {
     width: 440px;
     display: flex;
     gap: 3px;
 }
 
-.input-box-flex{
+.input-box-flex {
     width: 208px;
 }
 
-.label-div{
+.label-div {
     width: 208px;
     height: 28px;
 }
 
-#label-name{
+#label-name {
     color: #f9f6f6;
 }
 
-.name-input{
+.name-input {
     width: 208px;
     height: 40px;
     color: #f9f6f6;
 }
 
-.input-inner-div{
+.input-inner-div {
     width: 208px;
     padding: 0 12px 0 0;
 }
 
-.input-inner-div input{
+.input-inner-div input {
     width: 196px;
     height: 40px;
     padding: 8px 2px 8px 12px;
@@ -622,34 +613,34 @@ main{
     outline: none;
 }
 
-.input-bottom-line{
+.input-bottom-line {
     width: 208px;
     height: 1px;
     background: #ffffff;
 }
 
-.form-input-div{
+.form-input-div {
     width: 440px;
 }
 
-.label-div{
+.label-div {
     width: 440px;
     height: 28px;
 }
 
-#label-name{
+#label-name {
     width: 46px;
     height: 20px;
     margin: 0 0 8px;
 }
 
-.input-box{
+.input-box {
     width: 440px;
     height: 40px;
-    padding: 0 12px 0 0 ;
+    padding: 0 12px 0 0;
 }
 
-.input-box input{
+.input-box input {
     width: 428px;
     height: 40px;
     padding: 8px 2px 8px 12px;
@@ -659,35 +650,35 @@ main{
     background: transparent;
 }
 
-.form-input-div .input-bottom-line{
+.form-input-div .input-bottom-line {
     width: 440px;
 }
 
-.phone-box-div .input-box{
+.phone-box-div .input-box {
     display: flex;
 }
 
-.phone-box-div .icon-cont{
+.phone-box-div .icon-cont {
     width: 40px;
     height: 40px;
     background: white;
 }
 
-.phone-box-div input{
+.phone-box-div input {
     width: 376px;
     height: 40px;
 }
 
-.message-box-div{
+.message-box-div {
     width: 440px;
     height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
-.message-box-div textarea{
+.message-box-div textarea {
     width: 440px;
     padding: 8px 0;
     background: transparent;
@@ -696,12 +687,12 @@ main{
     color: #f9f6f6;
 }
 
-.form-btn-div{
+.form-btn-div {
     width: 440px;
     height: 44px;
 }
 
-.form-btn{
+.form-btn {
     width: 130px;
     height: 44px;
     background: #000000;
@@ -715,42 +706,41 @@ main{
 
 /* footer */
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
 }
 
-.footer-div{
+.footer-div {
     width: 1131px;
     height: 605px;
 }
 
-.top-line-div{
+.top-line-div {
     width: 1111px;
     height: 2px;
     background: #000;
-    /* margin: 75px 120px -2px; */
     margin: 75px 10px 4px 10px;
 }
 
-.footer-flex{
+.footer-flex {
     width: 1131px;
     display: flex;
 }
 
-.footer-flex-inner{
+.footer-flex-inner {
     width: 565.5px;
     height: 445px;
     padding: 0 0 0 1%;
 }
 
-.footer-heading{
+.footer-heading {
     margin: 50px 0 0 0;
     width: 376px;
     height: 36.41px;
 }
 
-.footer-heading a{
+.footer-heading a {
     width: 160px;
     height: 34px;
     font-size: 24px;
@@ -759,7 +749,7 @@ main{
     color: #000000;
 }
 
-.contact-box{
+.contact-box {
     width: 376px;
     height: 240px;
     display: flex;
@@ -768,68 +758,66 @@ main{
     gap: 20px;
 }
 
-.footer-contact{
+.footer-contact {
     width: 170px;
     height: 48px;
 }
 
-.footer-contact p{
+.footer-contact p {
     width: 170px;
     height: 24px;
     font-size: 16px;
     font-family: sans-serif+sans-serif;
 }
 
-.footer-contact a{
+.footer-contact a {
     text-decoration: none;
     color: #000000;
 }
 
-.address{
+.address {
     width: 190px;
     height: 48px;
     font-size: 16px;
     font-family: sans-serif+sans-serif;
 }
 
-.footer-right-flex{
+.footer-right-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.policy-box{
+.policy-box {
     width: 179px;
     height: 120px;
-    /* background: red; */
 }
 
-.footer-policy{
+.footer-policy {
     width: 179px;
     height: 48px;
 }
 
-.footer-policy p{
+.footer-policy p {
     width: 179px;
     height: 24px;
     font-size: 16px;
     font-family: sans-serif+sans-serif;
 }
 
-.footer-policy a{
+.footer-policy a {
     color: #000000;
     text-decoration: none;
 }
 
-.copyright{
+.copyright {
     width: 388px;
     height: 59px;
 }
 
-.footer .bottom-line-div{
+.footer .bottom-line-div {
     width: 1111px;
     height: 2px;
     background: #000;
-    /* margin: 75px 120px -2px; */
     margin: 4px 10px 75px 10px;
 }

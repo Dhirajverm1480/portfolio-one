@@ -4,9 +4,9 @@ let menuBox = document.querySelector('.menu-box')
 let Close = document.getElementById("close")
 
 menuBar.addEventListener('click', () => {
-    menuBox.style.display = 'block'
+menuBox.style.height = "100%";
 })
 
 Close.addEventListener('click', () => {
-    menuBox.style.display = 'none'
+    menuBox.style.height = "0%"
 })
